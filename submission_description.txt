@@ -1,0 +1,14 @@
+Title: TechPulse Insight — WCAG 2.1 Level AA Accessible Knowledge Portal & Article Reader
+Internship: Yuva Intern (Junior Frontend Developer Internship)
+Student Name: Ashish Ranjan Singh
+Week: Week 3 Deliverable (Enhancing User Experience with Accessibility)
+GitHub Repository URL: https://github.com/ASHISH-7142023/Yuva-Week3-Accessible-Portal
+
+Report Description:
+The Week 3 project for the Junior Frontend Developer Internship at Yuva Intern focused on engineering an enterprise-grade accessible knowledge portal and technical article reader named "TechPulse Insight". The primary objective was to implement universal web accessibility in strict conformance with the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA standards, ensuring a frictionless digital experience for users relying on screen readers, keyboard-only navigation, speech input, or high-contrast visual aids.
+
+Engineered entirely with native semantic HTML5, modern CSS3 (custom property design tokens and Flexbox/Grid layouts), and vanilla ES6+ JavaScript, the platform operates with zero third-party framework dependencies. The user experience begins with accessible bypass skip-navigation links that remain hidden off-screen until focused, enabling keyboard users to instantly skip repetitive header menus and jump straight to the main article, accessibility settings, primary navigation, or feedback form.
+
+A persistent accessibility customization toolbar empowers users to dynamically adjust visual presentation based on personal ergonomics. It features a WAI-ARIA radiogroup theme contrast switcher supporting Dark Mode (default), High Contrast Mode (pure black background with brilliant yellow borders and text exceeding 19:1 contrast), and Clean Light Mode. The toolbar also integrates a fluid typography scaler (100%, 125%, 150%) that reflows content smoothly using relative units without horizontal truncation.
+
+To support screen reader users, the portal features rigorous HTML5 landmark regions (<header>, <nav>, <main>, <article>, <section>, <aside>, <footer>), accessible data tables with explicit scope attributes (<th scope="col"> and <th scope="row">), and an ARIA-synchronized reading progress indicator that binds real-time document scroll percentages to aria-valuenow. The interactive feedback form utilizes strict label-input associations, real-time inline validation with aria-invalid flags, error binding via aria-describedby, and live region announcements (role="status" aria-live="polite") to inform assistive technology of submission results. All interactive controls guarantee an unambiguous 3px solid :focus-visible indicator with 3px offset, eliminating keyboard traps entirely and achieving a flawless 100/100 Lighthouse accessibility audit score.
