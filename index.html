@@ -115,7 +115,7 @@
           </div>
           <div class="brand-headings">
             <span class="brand-name">TechPulse<span class="brand-accent">Insight</span></span>
-            <span class="brand-subtext">Universal Accessibility &bull; WCAG 2.1 AA Lab</span>
+            <span class="brand-subtext">WCAG 2.1 AA Reference</span>
           </div>
         </a>
       </div>
@@ -207,7 +207,7 @@
          <figure>, <figcaption>, and <blockquote>
          =================================================================== -->
     <section class="article-wrapper-section" id="featured-article" aria-labelledby="article-main-title">
-      <div class="container layout-grid">
+      <div class="container article-container">
         
         <!-- Main Article Column -->
         <article class="accessible-article" id="quantum-computing-article">
@@ -381,22 +381,22 @@ console.log('✓ Post-Quantum TLS listener active on port 8443');</code></pre>
           </footer>
         </article>
 
-        <!-- Sidebar Column (<aside> Landmark) -->
-        <aside class="portal-sidebar" aria-label="Article Sidebar &amp; Related Knowledge">
+        <!-- Related Knowledge & Accessibility Deck (<aside> Landmark) -->
+        <aside class="portal-resources-deck" aria-label="Article Sidebar &amp; Related Knowledge">
           
           <!-- Author Info Card -->
-          <div class="sidebar-card">
-            <h3 class="sidebar-card-title">
+          <div class="resource-card">
+            <h3 class="resource-card-title">
               <span aria-hidden="true">👤</span> About the Author
             </h3>
-            <p class="sidebar-text">
+            <p class="resource-text">
               <strong>Dr. Aris Vance</strong> is Chief Cryptographer at TechPulse Labs, specializing in zero-trust mesh architectures and post-quantum transitions.
             </p>
           </div>
 
           <!-- Quick Navigation / Related Articles -->
-          <div class="sidebar-card" id="topic-archive">
-            <h3 class="sidebar-card-title">
+          <div class="resource-card" id="topic-archive">
+            <h3 class="resource-card-title">
               <span aria-hidden="true">📚</span> Related Research Papers
             </h3>
             <ul class="related-list">
@@ -422,11 +422,11 @@ console.log('✓ Post-Quantum TLS listener active on port 8443');</code></pre>
           </div>
 
           <!-- Accessibility Audio / TTS Announcement Card -->
-          <div class="sidebar-card">
-            <h3 class="sidebar-card-title">
+          <div class="resource-card">
+            <h3 class="resource-card-title">
               <span aria-hidden="true">🔊</span> Screen Reader Helper
             </h3>
-            <p class="sidebar-text">
+            <p class="resource-text">
               This article incorporates ARIA landmark regions (<code class="font-mono">main</code>, <code class="font-mono">article</code>, <code class="font-mono">aside</code>, <code class="font-mono">nav</code>). Use your screen reader landmark navigation key (<kbd>D</kbd> in NVDA/JAWS) to jump between major sections.
             </p>
           </div>
@@ -546,46 +546,48 @@ console.log('✓ Post-Quantum TLS listener active on port 8443');</code></pre>
 
           <form id="reader-feedback-form" class="accessible-form" novalidate>
             
-            <!-- Full Name Field -->
-            <div class="form-group" id="group-fullname">
-              <label for="input-fullname" class="form-label">
-                Full Name <span class="required-indicator" aria-hidden="true">*</span>
-                <span class="visually-hidden">(required)</span>
-              </label>
-              <input 
-                type="text" 
-                id="input-fullname" 
-                name="fullname" 
-                class="form-input" 
-                placeholder="e.g. Eleanor Vance" 
-                autocomplete="name" 
-                required 
-                aria-required="true"
-                aria-describedby="fullname-hint fullname-error"
-              >
-              <span class="field-hint" id="fullname-hint">Please enter your first and last name.</span>
-              <span class="field-error" id="fullname-error" role="alert" aria-live="assertive"></span>
-            </div>
+            <div class="form-row-2">
+              <!-- Full Name Field -->
+              <div class="form-group" id="group-fullname">
+                <label for="input-fullname" class="form-label">
+                  Full Name <span class="required-indicator" aria-hidden="true">*</span>
+                  <span class="visually-hidden">(required)</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="input-fullname" 
+                  name="fullname" 
+                  class="form-input" 
+                  placeholder="e.g. Eleanor Vance" 
+                  autocomplete="name" 
+                  required 
+                  aria-required="true"
+                  aria-describedby="fullname-hint fullname-error"
+                >
+                <span class="field-hint" id="fullname-hint">Please enter your first and last name.</span>
+                <span class="field-error" id="fullname-error" role="alert" aria-live="assertive"></span>
+              </div>
 
-            <!-- Email Address Field -->
-            <div class="form-group" id="group-email">
-              <label for="input-email" class="form-label">
-                Email Address <span class="required-indicator" aria-hidden="true">*</span>
-                <span class="visually-hidden">(required)</span>
-              </label>
-              <input 
-                type="email" 
-                id="input-email" 
-                name="email" 
-                class="form-input" 
-                placeholder="e.g. name@organization.com" 
-                autocomplete="email" 
-                required 
-                aria-required="true"
-                aria-describedby="email-hint email-error"
-              >
-              <span class="field-hint" id="email-hint">We will never share your contact address with third parties.</span>
-              <span class="field-error" id="email-error" role="alert" aria-live="assertive"></span>
+              <!-- Email Address Field -->
+              <div class="form-group" id="group-email">
+                <label for="input-email" class="form-label">
+                  Email Address <span class="required-indicator" aria-hidden="true">*</span>
+                  <span class="visually-hidden">(required)</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="input-email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="e.g. name@organization.com" 
+                  autocomplete="email" 
+                  required 
+                  aria-required="true"
+                  aria-describedby="email-hint email-error"
+                >
+                <span class="field-hint" id="email-hint">We will never share your contact address with third parties.</span>
+                <span class="field-error" id="email-error" role="alert" aria-live="assertive"></span>
+              </div>
             </div>
 
             <!-- Feedback Category Field -->
